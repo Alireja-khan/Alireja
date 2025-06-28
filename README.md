@@ -6,7 +6,7 @@ Welcome to my personal developer portfolio! Built with React and styled with Tai
 
 ## 📸 Live Preview
 
-🌐 **Website:** [https://ali-reja-4b7b7.web.app/](https://your-portfolio-url.web.app)
+🌐 **Website:** [https://ali-reja-4b7b7.web.app/](https://ali-reja-4b7b7.web.app/)
 
 ---
 
