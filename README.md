@@ -6,14 +6,7 @@ Welcome to my personal developer portfolio! Built with React and styled with Tai
 
 ## 📸 Live Preview
 
-<a
-  href="https://ali-reja-4b7b7.web.app/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-orange-500 underline hover:text-orange-300 transition"
->
-  🌐 Live Link
-</a>
+👉 [Live Link](https://ali-reja-4b7b7.web.app/) 
 
 
 ---
