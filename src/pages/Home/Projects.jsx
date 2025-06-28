@@ -10,7 +10,7 @@ const projects = [
     title: "Food-Circle",
     description:
       "A React Food Share and Donating web app that uses Firebase, MongoDB, CRUD operations to add and find foods.",
-    image: "https://i.ibb.co/PvN6CBYh/Cream-Neutral-Minimalist-New-Business-Pitch-Deck-Presentation.png",
+    image: "https://i.ibb.co/tTXW25HC/Screenshot-2025-06-28-232042.png",
     link: "https://food-circle-a4f01.web.app/",
     code: "https://github.com/Alireja-khan/Food-Circle-Client?tab=readme-ov-file",
     technologies: ["React", "Firebase", "MongoDB", "CRUD"],
@@ -20,7 +20,7 @@ const projects = [
     title: "Hobby-Hub",
     description:
       "A social web app built with React, Firebase & MongoDB, where users can create, join, and manage hobby groups with authentication and role-based access.",
-    image: "https://i.ibb.co/8LPmh9Vm/Cream-Neutral-Minimalist-New-Business-Pitch-Deck-Presentation.png",
+    image: "https://i.ibb.co/Y7PCFj5c/Screenshot-2025-06-28-235213.png",
     link: "https://hobbyhub-app.web.app/",
     code: "https://github.com/Alireja-khan/Hobby-Hub-Clint?tab=readme-ov-file",
     technologies: ["React", "Firebase", "MongoDB", "Auth", "RBAC"],
@@ -30,7 +30,7 @@ const projects = [
     title: "Pay-Tracker",
     description:
       "A React bill pay manager web app that uses Firebase to track your bills and daily habits.",
-    image: "https://i.ibb.co/Rpb5xBDz/pay-tracker.png",
+    image: "https://i.ibb.co/yxKDwLQ/Screenshot-2025-06-29-002109.png",
     link: "http://expensive-peace.surge.sh/",
     code: "https://github.com/Alireja-khan/Pay-Tracker?tab=readme-ov-file",
     technologies: ["React", "Firebase"],
