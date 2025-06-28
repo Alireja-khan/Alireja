@@ -58,7 +58,7 @@ my-portfolio/
 
 | Home Page                            | Project Section                          |
 | ----------------------------------- | ---------------------------------------- |
-| ![Home](https://i.ibb.co/tTXW25HC/Screenshot-2025-06-28-232042.png) | ![Projects](https://i.ibb.co/Y7PCFj5c/Screenshot-2025-06-28-235213.png) |
+| ![Home](https://i.ibb.co/nszv1SC0/Screenshot-2025-06-29-042626.png) | ![Projects](https://i.ibb.co/NzN9dfR/Screenshot-2025-06-29-042750.png) |
 
 ---
 
