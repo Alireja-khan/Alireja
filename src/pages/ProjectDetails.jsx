@@ -1,14 +1,22 @@
-import React from "react";
-import { useParams, Link as RouterLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, useNavigate, Link as RouterLink } from "react-router-dom";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
-import projects from "../data/projectsData";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import projects from "../data/projectsData";
+import navImg from "../assets/letter-a4.png";
+import { motion } from "framer-motion";
 
 const ProjectDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const project = projects.find((proj) => proj.id.toString() === id);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   if (!project) {
     return (
@@ -24,17 +32,50 @@ const ProjectDetails = () => {
     );
   }
 
-  return (
-    <section className="bg-[#1a1a1a] text-white py-20 px-6 md:px-40">
-      <div className="max-w-4xl mx-auto">
-        {/* Title */}
-        <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
-        <h2 className="text-orange-400 text-xl mb-6">{project.subtitle}</h2>
+  // Function to navigate and scroll to #home after render
+  const goToHomeAndScroll = () => {
+    navigate("/");
+    setTimeout(() => {
+      const section = document.getElementById("home");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300);
+  };
 
-        {/* Screenshot Carousel */}
+  return (
+    <motion.section
+      className="bg-[#1a1a1a] text-white py-20 px-6 md:px-40"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 60, damping: 15, duration: 0.8 }}
+    >
+      <div className="max-w-4xl mx-auto">
+        {/* Logo + Title */}
+        <div className="flex items-center gap-4 mb-6">
+          <img
+            className="w-10 h-10 cursor-pointer hover:scale-105 transition-transform"
+            src={navImg}
+            alt="logo"
+            onClick={goToHomeAndScroll}
+          />
+          <h1 className="text-4xl font-bold">{project.title}</h1>
+        </div>
+
+        {project.subtitle && (
+          <h2 className="text-gray-400 text-xl mb-6">{project.subtitle}</h2>
+        )}
+
+        {/* Screenshot Carousel with loop + autoplay */}
         <div className="mb-8 rounded-xl overflow-hidden">
-          <Swiper spaceBetween={20} slidesPerView={1}>
-            {project.screenshots.map((shot, index) => (
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+          >
+            {project.screenshots?.map((shot, index) => (
               <SwiperSlide key={index}>
                 <img
                   src={shot}
@@ -47,10 +88,12 @@ const ProjectDetails = () => {
         </div>
 
         {/* Overview */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-2">Overview:</h3>
-          <p className="text-gray-300">{project.overview}</p>
-        </div>
+        {project.overview && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">Overview:</h3>
+            <p className="text-gray-300">{project.overview}</p>
+          </div>
+        )}
 
         {/* Tech Stack */}
         <div className="mb-8">
@@ -68,44 +111,52 @@ const ProjectDetails = () => {
         </div>
 
         {/* Features */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3">Key Features:</h3>
-          <ul className="list-disc list-inside text-gray-300 space-y-1">
-            {project.features.map((feature, i) => (
-              <li key={i}>{feature}</li>
-            ))}
-          </ul>
-        </div>
+        {project.features && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-3">Key Features:</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              {project.features.map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Challenges */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3">Challenges Faced:</h3>
-          <ul className="list-disc list-inside text-gray-300 space-y-1">
-            {project.challenges.map((challenge, i) => (
-              <li key={i}>{challenge}</li>
-            ))}
-          </ul>
-        </div>
+        {project.challenges && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-3">Challenges Faced:</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              {project.challenges.map((challenge, i) => (
+                <li key={i}>{challenge}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Solutions */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3">Solutions Implemented:</h3>
-          <ul className="list-disc list-inside text-gray-300 space-y-1">
-            {project.solutions.map((solution, i) => (
-              <li key={i}>{solution}</li>
-            ))}
-          </ul>
-        </div>
+        {project.solutions && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-3">Solutions Implemented:</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              {project.solutions.map((solution, i) => (
+                <li key={i}>{solution}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Improvements */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3">Future Improvements:</h3>
-          <ul className="list-disc list-inside text-gray-300 space-y-1">
-            {project.improvements.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        {project.improvements && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-3">Future Improvements:</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              {project.improvements.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-4 mb-12">
@@ -141,7 +192,7 @@ const ProjectDetails = () => {
           )}
         </div>
 
-        {/* Back Button */}
+        {/* Back to Projects */}
         <RouterLink
           to="/"
           onClick={() => {
@@ -150,15 +201,16 @@ const ProjectDetails = () => {
               if (section) {
                 section.scrollIntoView({ behavior: "smooth" });
               }
-            }, 100); // delay to ensure route change
+            }, 300);
           }}
-          className="text-orange-400 underline hover:text-orange-300 transition text-sm"
+          className="inline-flex items-center gap-2 border border-orange-500 hover:bg-orange-600 bg-orange-500 text-black px-5 py-2 rounded-full transition-all duration-300 mt-4 text-sm"
         >
-          ← Back to Projects
+          <span className="text-lg">←</span>
+          Back to Projects
         </RouterLink>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

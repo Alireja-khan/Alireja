@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll";
+import { Link, Link as ScrollLink } from "react-scroll";
+import navImg from "../assets/letter-a4.png"
 
 const Footer = () => {
   return (
@@ -8,7 +9,21 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left Side */}
         <div className="text-center md:text-left">
-          <h3 className="text-2xl font-bold text-white">Alireja Khan</h3>
+          <div className="flex items-center gap-3">
+            <Link to="home" smooth={true} duration={500} spy={true} offset={-70}>
+              <img className="w-10 h-10 cursor-pointer" src={navImg} alt="logo" />
+            </Link>
+            <Link
+              className="text-2xl text-white font-semibold cursor-pointer"
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              offset={-70}
+            >
+              Alireja
+            </Link>
+          </div>
           <p className="text-sm mt-1">Full Stack Developer</p>
         </div>
 

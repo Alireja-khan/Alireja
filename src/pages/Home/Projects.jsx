@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className="py-20 px-6 md:px-16 xl:px-40 text-gray-800"
+      className="py-36 px-6 md:px-16 xl:px-40 text-gray-800"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 60, damping: 15, duration: 0.8 }}
@@ -110,7 +110,7 @@ const Projects = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {isTopCard && (
-                    <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-6">
+                    <div className="absolute inset-0 bg-[#000000] flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-6">
                       <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                       <p className="text-sm text-gray-300 mb-4">{project.description}</p>
                       <div className="flex flex-wrap justify-center gap-2 mb-4">

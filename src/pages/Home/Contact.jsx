@@ -38,7 +38,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="max-w-6xl mx-auto px-6 py-36 text-white">
+        <section id="contact" className="max-w-6xl  mx-auto px-6 py-36 text-white">
             <motion.div
                 className="text-center mb-12"
                 initial={{ opacity: 0, y: 40 }}

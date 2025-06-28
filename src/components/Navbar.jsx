@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    
 
     const navLinks = (
         <>
@@ -18,7 +19,7 @@ const Navbar = () => {
                     duration={500}
                     spy={true}
                     offset={-70}
-                    className="block lg:inline-block mr-5 text-white text-lg hover:text-orange-500 cursor-pointer"
+                    className="block lg:inline-block mr-5 linkClass text-white text-lg hover:text-orange-500 cursor-pointer"
                     onClick={() => setIsOpen(false)} // close on mobile click
                 >
                     {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
@@ -35,16 +36,7 @@ const Navbar = () => {
                     <Link to="home" smooth={true} duration={500} spy={true} offset={-70}>
                         <img className="w-10 h-10 cursor-pointer" src={navImg} alt="logo" />
                     </Link>
-                    <Link
-                        className="text-2xl text-white font-semibold cursor-pointer"
-                        to="home"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        offset={-70}
-                    >
-                        Alireja
-                    </Link>
+                    <p className="text-2xl text-white font-semibold cursor-pointer">Alireja</p>
                 </div>
 
                 {/* Desktop Menu */}

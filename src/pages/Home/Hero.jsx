@@ -10,7 +10,7 @@ const Hero = () => {
         >
             {/* Left Content */}
             <div className="z-10 w-full lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left">
-                <h1 className="text-4xl sm:text-5xl font-bold mb-3 font-mono flex justify-center lg:justify-start items-center gap-1">
+                <h1 className="text-4x  sm:text-5xl font-bold mb-3 font-mono flex justify-center lg:justify-start items-center gap-1">
                     <Typewriter
                         words={["Alireja Khan"]}
                         loop={false}

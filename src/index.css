@@ -14,3 +14,8 @@
 body {
   font-family: "Fira Code", monospace;
 }
+
+
+.active {
+  color: #f97316;
+}
