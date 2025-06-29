@@ -105,10 +105,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-### 🙌 Special Thanks
-
-- Programming Hero for their course
-- OpenAI for endless debugging wisdom
-- My family and community for the support 💛
-
----
+📬 Contact
+Developer: [Md. Alireja Khan]
+Email: alirejakhan18@gmail.com
