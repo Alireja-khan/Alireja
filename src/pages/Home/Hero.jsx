@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { Typewriter } from "react-simple-typewriter";
+import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaDownload } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
@@ -25,14 +27,54 @@ const Hero = () => {
                     A Passionate Full Stack Developer.
                 </p>
 
-                <Link to="contact" smooth={true} duration={500} spy={true} offset={-70}>
-                    <button className="border border-orange-500 text-orange-500 px-6 py-2 rounded-full hover:bg-orange-500 hover:text-black transition-all duration-300 uppercase font-semibold tracking-wide">
-                        Get in Touch
-                    </button>
-                </Link>
+                <div className='flex items-center gap-5'>
+                    <Link to="projects" smooth={true} duration={500} spy={true} offset={-70}>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="border border-orange-500 text-orange-500 px-6 py-2 rounded-full hover:bg-orange-500 hover:text-black transition-all duration-300 uppercase font-semibold tracking-wide">
+                            ✦ Projects
+                        </motion.button>
+                    </Link>
+
+
+                    {/* Here need to make this button into anchor and need attach an Resume */}
+                    <motion.button
+                        // href="/resume.pdf"
+                        // download="Alireza_Khan_Resume.pdf"
+                        className="flex items-center gap-2 bg-orange-500 text-black font-semibold px-6 py-2 rounded-full  transition uppercase tracking-wide"
+                        whileHover={{
+                            scale: 1.05,
+                            boxShadow: "0 0 15px rgba(249, 115, 22, 0.5)"
+                        }}
+                        whileTap={{ scale: 0.95 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.1 }}
+                    >
+                        <FaDownload className="text-sm" />
+                        <span>Resume</span>
+                    </motion.button>
+                </div>
+
+                {/* Social Icons */}
+                <div className="flex justify-center lg:justify-start gap-4 mt-6">
+                    <a href="https://github.com/Alireja-khan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                        <FaGithub size={24} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/alireja-khan/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                        <FaLinkedin size={24} />
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                        <FaTwitter size={24} />
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+                        <FaFacebook size={24} />
+                    </a>
+                </div>
 
                 <div className="mt-10 flex items-center justify-center lg:justify-start gap-3 text-sm text-gray-400">
-                    <span>Explore My Projects</span>
+                    <span>Take a Tour</span>
                     <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
                 </div>
             </div>
