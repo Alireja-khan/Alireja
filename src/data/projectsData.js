@@ -2,11 +2,67 @@
 const projects = [
   {
     id: 1,
+    title: "Aaponaloi",
+    subtitle: "Rental Management System - Full-stack platform",
+    overview:
+      "Aaponaloi is a full-stack, role-based Building Management System that simplifies apartment listings, user agreements, payments, and community communication. Built for residents, building managers, and administrators to collaboratively manage residential operations in a modern and secure way.",
+    technologies: ["react", "javascript", "firebase", "mongodb", "node-js", "firebase-auth", "express-js", "tailwindcss", "daisyUI", "framer-motion"],
+    features: [
+      "Browse available apartments with images, rent info, and search/ pagination",
+      "Apply for rental agreements(1 user = 1 apartment policy)",
+      "Make payments with coupon support",
+      "View payment history",
+      "See latest building announcements",
+      "Update personal profile"
+    ],
+    challenges: [
+      "Implementing role-based authentication and access control",
+      "Preventing multiple pending apartment requests by a single user",
+      "Managing pagination and rent range search together",
+      "Validating and applying coupon discounts securely",
+      "Keeping UI consistent with animations and responsive design",
+    ],
+    solutions: [
+      "Used Firebase Auth with custom role checks for routing",
+      "Added backend validation to restrict one active agreement per user",
+      "Combined MongoDB queries with pagination and dynamic search filters",
+      "Implemented backend coupon verification with expiry and usage checks",
+      "Used Tailwind CSS with Framer Motion for a consistent, responsive UI",
+    ],
+    improvements: [
+      "Add real-time notifications for agreement status updates",
+      "Integrate secure online payment gateway",
+      "Enable apartment availability tracking in real time",
+      "Implement dark mode for better user experience",
+      "Add admin analytics dashboard with charts and reports",
+    ],
+
+    link: "https://aaponaloi.web.app/",
+    code: {
+      client: "https://github.com/Alireja-khan/aaponaloi-clint",
+      server: "https://github.com/Alireja-khan/Aaponaloi-Server"
+    },
+    screenshots: [
+      "https://i.ibb.co.com/Txz1HcbS/Screenshot-2025-08-12-022643.png",
+      "https://i.ibb.co.com/S4Xj915P/Screenshot-2025-08-12-022407.png",
+      "https://i.ibb.co.com/B2W7P84n/Screenshot-2025-08-12-022543.png",
+      "https://i.ibb.co.com/zT417x20/Screenshot-2025-08-12-022521.png",
+      "https://i.ibb.co.com/TxPN7Bgk/Screenshot-2025-08-12-022429.png",
+      "https://i.ibb.co.com/d0C2HCCh/Screenshot-2025-08-12-022459.png",
+      "https://i.ibb.co.com/YFKdBTyy/Screenshot-2025-08-12-022658.png",
+      "https://i.ibb.co.com/fGttn14y/Screenshot-2025-08-12-023138.png",
+      "https://i.ibb.co.com/Q7K8FgR1/Screenshot-2025-08-12-023316.png",
+      "https://i.ibb.co.com/Gv4M3CMr/Screenshot-2025-08-12-023946.png"
+
+    ]
+  },
+  {
+    id: 2,
     title: "Food-Circle",
     subtitle: "Full-Stack Food Sharing Web App",
     overview:
-      "FoodCircle is a platform that helps users share surplus food within their community to reduce waste and support those in need.",
-    technologies: ["React", "Firebase", "MongoDB", "Tailwind", "JWT", "Express"],
+      "FoodCircle is a community-driven platform designed to help users share their surplus food with others nearby. By connecting donors with people in need, it aims to reduce food waste while supporting those facing food insecurity. The platform offers easy-to-use features for adding, managing, and requesting food donations, creating a positive impact within local neighborhoods.",
+    technologies: ["react", "javascript", "firebase", "mongodb", "node-js", "firebase-auth", "express-js", "tailwindcss", "daisyUI", "framer-motion"],
     features: [
       "User Authentication",
       "Food Add/Delete/Request System",
@@ -29,7 +85,7 @@ const projects = [
       "Implement dark mode",
       "Improve analytics dashboard",
     ],
-    link: "https://food-circle-a4f01.web.app/",
+    link: "https://utter-waste.surge.sh/",
     code: {
       client: "https://github.com/Alireja-khan/Food-Circle-Client",
       server: "https://github.com/Alireja-khan/Food-Circle-Server"
@@ -48,12 +104,12 @@ const projects = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: "Hobby-Hub",
     subtitle: "Group-Based Hobby Management App",
     overview:
-      "HobbyHub is a social web app that lets users create, manage, and join hobby-based groups to collaborate and share their interests.",
-    technologies: ["React", "Firebase", "MongoDB", "Tailwind", "Express", "RBAC"],
+      "HobbyHub is an interactive social web application that allows users to create, manage, and join various hobby-based groups. It provides a platform where people with shared interests can collaborate, exchange ideas, organize events, and build communities around their favorite activities. Whether you’re into arts, sports, gaming, or any other hobby, HobbyHub makes it easy to connect and engage with like-minded individuals.",
+    technologies: ["react", "javascript", "firebase", "mongodb", "node-js", "firebase-auth", "express-js", "tailwindcss", "daisyUI", "framer-motion"],
     features: [
       "User login with role management",
       "Create/join hobby groups",
@@ -97,12 +153,12 @@ const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Pay-Tracker",
     subtitle: "Bill Payment Tracking Application",
     overview:
       "Pay-Tracker is a tool that helps individuals manage bill payments, monitor recurring expenses, and stay financially organized.",
-    technologies: ["React", "Firebase", "Tailwind", "Context API"],
+    technologies: ["react", "javascript", "firebase", "node-js", "firebase-auth", "tailwindcss", "daisyUI", "Context API"],
     features: [
       "Add/Edit/Delete bills",
       "Track recurring payments",
