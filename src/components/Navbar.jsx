@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import navImg from "../assets/letter-a4.png";
 import { FiMenu, FiX } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
     );
 
     return (
-        <nav className="bg-[#343434] sticky top-0 z-50 px-6 md:px-20 py-4 shadow-sm">
+        <nav className="bg-[#343434] sticky top-0 z-50 px-6 md:px-25 py-4 shadow-sm">
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center gap-3">
@@ -42,16 +44,23 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex items-center space-x-6">
                     {navLinks}
-                    <Link
-                        to="contact"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        offset={-70}
-                        className="border border-orange-500 text-orange-500 px-6 py-2 rounded-full hover:bg-orange-500 hover:text-black transition-all duration-300 cursor-pointer font-medium"
+                    {/* Here need to make this button into anchor and need attach an Resume */}
+                    <motion.button
+                        // href="/resume.pdf"
+                        // download="Alireza_Khan_Resume.pdf"
+                        className="flex items-center gap-2 hover:bg-orange-500 bg-[#2a2a2a] hover:text-black text-white border border-orange-500 hover:font-semibold px-6 py-2 rounded-full  transition uppercase tracking-wide"
+                        whileHover={{
+                            scale: 1.05,
+                            boxShadow: "0 0 15px rgba(249, 115, 22, 0.5)"
+                        }}
+                        whileTap={{ scale: 0.95 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.1 }}
                     >
-                        Decode Me
-                    </Link>
+                        <FaDownload className="text-sm" />
+                        <span>Decode Me</span>
+                    </motion.button>
                 </div>
 
                 {/* Mobile menu toggle button */}

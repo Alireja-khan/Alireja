@@ -7,7 +7,14 @@ import {
   FaNodeJs,
   FaGithub,
   FaCode,
-  FaComments
+  FaComments,
+  FaUsers,
+  FaPuzzlePiece,
+  FaClock,
+  FaSyncAlt,
+  FaSearchPlus,
+  FaUserTie,
+  FaGraduationCap
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -81,13 +88,61 @@ const Skills = () => {
         { name: "AOS", icon: <AosIcon /> },
       ]
     },
+
+
+
+
+
     {
-      title: "Other",
+      title: "Soft Skills",
       skills: [
-        { name: "Full-Stack Development", icon: <FaCode /> },
-        { name: "Communication", icon: <FaComments /> },
+        {
+          name: "Communication",
+          icon: <FaComments />,
+          description: "Clear articulation of technical concepts to both technical and non-technical stakeholders"
+        },
+        {
+          name: "Team Collaboration",
+          icon: <FaUsers />,
+          description: "Effective participation in agile teams using tools like Git, Slack, and Jira"
+        },
+        {
+          name: "Problem Solving",
+          icon: <FaPuzzlePiece />,
+          description: "Analytical approach to debugging and system design challenges"
+        },
+        {
+          name: "Time Management",
+          icon: <FaClock />,
+          description: "Meeting deadlines while maintaining code quality through prioritization"
+        },
+        {
+          name: "Adaptability",
+          icon: <FaSyncAlt />,
+          description: "Quickly learning new technologies and adapting to changing requirements"
+        },
+        {
+          name: "Attention to Detail",
+          icon: <FaSearchPlus />,
+          description: "Catching edge cases and maintaining consistent UI/UX patterns"
+        },
+        {
+          name: "Client Focus",
+          icon: <FaUserTie />,
+          description: "Understanding user needs and business objectives"
+        },
+        {
+          name: "Continuous Learning",
+          icon: <FaGraduationCap />,
+          description: "Keeping up with industry trends and best practices"
+        }
       ]
     }
+
+
+
+
+
   ];
 
   return (
@@ -105,7 +160,7 @@ const Skills = () => {
 
         {skillCategories.map((category, catIndex) => (
           <div key={catIndex} className="mb-12">
-            <motion.h3 
+            <motion.h3
               className="text-2xl font-bold mb-6 text-start border-b border-orange-500 pb-2 inline-block"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -114,7 +169,7 @@ const Skills = () => {
             >
               {category.title}
             </motion.h3>
-            
+
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               {category.skills.map((skill, index) => (
                 <motion.div
