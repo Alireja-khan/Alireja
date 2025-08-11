@@ -241,7 +241,7 @@ const ProjectDetails = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1.2 }}
-              className="flex items-center ml-55 gap-4 mb-10"
+              className="lg:flex items-center lg:block md:hidden hidden ml-55 gap-4 mb-10"
             >
               <RouterLink
                 to="/"
@@ -429,6 +429,28 @@ const ProjectDetails = () => {
                       project.title.includes('Hobby') ? 'hobby enthusiasts' : 'bill payers'} by {project.overview.split('.').shift().toLowerCase()}.
                 </p>
               </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1.2 }}
+              className=" lg:hidden block md:block text-center mx-auto gap-4 mb-10"
+            >
+              <RouterLink
+                to="/"
+                onClick={() => {
+                  setTimeout(() => {
+                    const section = document.getElementById("projects");
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 300);
+                }}
+                className="text-white border bg-[#2a2a2a] border-orange-500 py-2 px-4 pl-10 md:pl-45 rounded-lg hover:bg-orange-500 hover:text-black hover:font-semibold transition-colors flex items-center gap-2"
+              >
+                <FaRunning className="transform -scale-x-100" /> <span><FiArrowLeft className="text-orange-500 hover:text-black" /></span> Go Back to All Projects
+              </RouterLink>
             </motion.div>
 
           </div>

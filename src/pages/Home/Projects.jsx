@@ -93,7 +93,7 @@ const Projects = () => {
               <button
                 key={project.id}
                 onClick={() => setActiveProject(index)}
-                className={`flex-shrink-0 px-6 py-3 rounded-lg transition-all duration-300 ${activeProject === index
+                className={`flex-shrink-0 px-6 py-3 lg:min-h-full rounded-lg transition-all duration-300 ${activeProject === index
                   ? "bg-orange-500 text-black font-medium"
                   : "bg-[#1e1e1e] hover:bg-[#2a2a2a] text-gray-300"
                   }`}

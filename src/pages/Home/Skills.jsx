@@ -139,14 +139,10 @@ const Skills = () => {
       ]
     }
 
-
-
-
-
   ];
 
   return (
-    <section id="skills" className="w-full text-white md:pt-36 pb-10 md:pb-36 px-6 md:px-40">
+    <section id="skills" className="w-full text-white md:pt-36 pb-10 md:pb-36 px-6 md:px-12 lg:px-40">
       <div
       >
         <div className="mb-20">
