@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaFacebook } from "react-icons/fa";
 import { Link, Link as ScrollLink } from "react-scroll";
 import navImg from "../assets/letter-a4.png"
 
@@ -76,31 +76,22 @@ const Footer = () => {
           </ScrollLink>
         </div>
 
-        {/* Right Side - Socials */}
-        <div className="flex gap-4 text-xl">
-          <a
-            href="https://github.com/Alireja-khan"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-500"
-          >
-            <FaGithub />
+        {/* Social Icons */}
+        <div className="flex justify-center lg:justify-start gap-4">
+          <a href="https://github.com/Alireja-khan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <FaGithub size={20}/>
           </a>
-          <a
-            href="https://linkedin.com/in/your-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-500"
-          >
-            <FaLinkedin />
+          <a href="https://www.linkedin.com/in/alireja-khan/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <FaLinkedin size={20}/>
           </a>
-          <a
-            href="mailto:your-email@example.com"
-            className="hover:text-orange-500"
-          >
-            <FaEnvelope />
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <FaTwitter size={20}/>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <FaFacebook size={20}/>
           </a>
         </div>
+
       </div>
 
       {/* Bottom */}
