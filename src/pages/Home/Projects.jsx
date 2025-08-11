@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className="py-36 px-6 md:px-16 xl:px-40 text-gray-800"
+      className="md:pt-36 pb-36 px-6 md:px-16 xl:px-40 text-gray-800"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 60, damping: 15, duration: 0.8 }}

@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="text-white py-36 px-6 md:px-40 relative">
+    <section id="about" className="text-white md:pt-36 md:pb-36 pb-10 px-6 md:px-40 relative">
       <div className="w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Side - Image */}
         <motion.div
