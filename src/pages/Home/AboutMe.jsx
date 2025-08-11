@@ -37,7 +37,7 @@ const AboutMe = () => {
           </p>
 
           <p className="text-lg mb-4">
-            My journey into programming started with simple curiosity. That spark turned into a deep passion when I discovered Jhankar Mahbub Vai and started learning from his content. Since then, I’ve gone from building basic HTML pages to developing full-stack applications—and I’ve loved every moment of it.
+            My journey into programming started with simple curiosity. That spark turned into a deep passion when I discovered Jhankar Mahbub Sir and started learning from his content. Since then, I’ve gone from building basic HTML pages to developing full-stack applications—and I’ve loved every moment of it.
           </p>
 
           <p className="text-lg mb-4">
@@ -45,11 +45,15 @@ const AboutMe = () => {
           </p>
 
           <p className="text-lg mb-4">
-            Outside of coding, I like sketching, watching documentaries, playing mobile games, and exploring new trends in technology. I believe staying curious—both in tech and in life—helps me stay inspired and grow.
+            Outside of coding, I like sketching, watching movies, playing cricket and chess, and exploring new trends in technology. I believe staying curious—both in tech and in life—helps me stay inspired and grow.
           </p>
 
           <p className="text-lg">
             I’m not just here to code. I’m here to create, grow, and hopefully make a difference—one project at a time.
+          </p>
+
+          <p className="text-lg mb-4">
+            Want to build something together? <a href="#contact" className="text-orange-500">Let’s connect!</a>
           </p>
         </motion.div>
 

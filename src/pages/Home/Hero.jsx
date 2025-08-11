@@ -58,7 +58,7 @@ const Hero = () => {
                 </div>
 
                 {/* Social Icons */}
-                <div className="flex justify-center lg:justify-start gap-4 mt-6">
+                <div className="flex justify-center lg:justify-start gap-4 mt-8">
                     <a href="https://github.com/Alireja-khan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
                         <FaGithub size={24} />
                     </a>
@@ -73,7 +73,7 @@ const Hero = () => {
                     </a>
                 </div>
 
-                <div className="mt-10 flex items-center justify-center lg:justify-start gap-3 text-sm text-gray-400">
+                <div className="mt-3 flex items-center justify-center lg:justify-start gap-3 text-sm text-gray-400">
                     <span>Take a Tour</span>
                     <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
                 </div>
