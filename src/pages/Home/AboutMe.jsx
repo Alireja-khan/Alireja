@@ -22,7 +22,7 @@ const AboutMe = () => {
 
         {/* Right Side - Text */}
         <motion.div
-          className="overflow-y-auto max-h-[20vh] md:max-h-[40vh] lg:max-h-130 scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-800 pr-2"
+          className="overflow-y-auto min-h-full md:max-h-[40vh] lg:max-h-130 scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-800 pr-2"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
