@@ -52,7 +52,7 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className="py-24 px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-48 bg-[#343434]"
+      className=" px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-48 bg-[#343434]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
