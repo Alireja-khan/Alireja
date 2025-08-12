@@ -33,23 +33,23 @@ const AboutMe = () => {
           </h2>
 
           <div className="space-y-3 md:space-y-4">
-            <p className="text-base sm:text-lg line-clamp-4 md:line-clamp-none">
+            <p className="text-base sm:text-lg md:line-clamp-none">
               Hello! I'm <span className="text-orange-500">{"</"}</span><span className="text-orange-500 font-semibold">Alireja</span><span className="text-orange-500">{">"}</span>, a passionate and self-driven web developer from Bangladesh. I specialize in building responsive, user-friendly, and performance-optimized web apps using modern tools like React, Firebase, and MongoDB.
             </p>
 
-            <p className="text-base sm:text-lg line-clamp-4 md:line-clamp-none">
+            <p className="text-base sm:text-lg md:line-clamp-none">
               My journey into programming started with simple curiosity. That spark turned into a deep passion when I discovered Jhankar Mahbub Sir and started learning from his content. Since then, I've gone from building basic HTML pages to developing full-stack applications—and I've loved every moment of it.
             </p>
 
-            <p className="text-base sm:text-lg line-clamp-4 md:line-clamp-none">
+            <p className="text-base sm:text-lg md:line-clamp-none">
               I genuinely enjoy working on meaningful projects that solve real problems or bring fun, creative ideas to life. I care a lot about clean UI, smooth animations, and creating a great user experience. I also challenge myself to keep learning and improving with every project.
             </p>
 
-            <p className="text-base sm:text-lg line-clamp-4 md:line-clamp-none">
+            <p className="text-base sm:text-lg md:line-clamp-none">
               Outside of coding, I like sketching, watching movies, playing cricket and chess, and exploring new trends in technology. I believe staying curious—both in tech and in life—helps me stay inspired and grow.
             </p>
 
-            <p className="text-base sm:text-lg line-clamp-4 md:line-clamp-none">
+            <p className="text-base sm:text-lg md:line-clamp-none">
               I'm not just here to code. I'm here to create, grow, and hopefully make a difference—one project at a time.
             </p>
 
