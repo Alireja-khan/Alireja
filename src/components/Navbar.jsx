@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
-    
+
 
     const navLinks = (
         <>
@@ -44,23 +44,28 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex items-center space-x-6">
                     {navLinks}
-                    {/* Here need to make this button into anchor and need attach an Resume */}
-                    <motion.button
-                        // href="/resume.pdf"
-                        // download="Alireza_Khan_Resume.pdf"
-                        className="flex items-center gap-2 hover:bg-orange-500 bg-[#2a2a2a] hover:text-black text-white border border-orange-500 hover:font-semibold px-6 py-2 rounded-full  transition uppercase tracking-wide"
-                        whileHover={{
-                            scale: 1.05,
-                            boxShadow: "0 0 15px rgba(249, 115, 22, 0.5)"
-                        }}
-                        whileTap={{ scale: 0.95 }}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.1 }}
+                    
+                    <a
+                        href="/Resume.pdf"
+                        download="Alireja_Khan_Resume.pdf"
                     >
-                        <FaDownload className="text-sm" />
-                        <span>Decode Me</span>
-                    </motion.button>
+                        <motion.button
+                            className="flex items-center gap-2 hover:bg-orange-500 bg-[#2a2a2a] hover:text-black text-white border border-orange-500 hover:font-semibold px-6 py-2 rounded-full transition uppercase tracking-wide"
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 0 15px rgba(249, 115, 22, 0.5)"
+                            }}
+                            whileTap={{ scale: 0.95 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.1 }}
+                        >
+                            <FaDownload className="text-sm" />
+                            <span>Decode Me</span>
+                        </motion.button>
+                    </a>
+
+
                 </div>
 
                 {/* Mobile menu toggle button */}
@@ -78,19 +83,17 @@ const Navbar = () => {
             {isOpen && (
                 <div className="lg:hidden mt-4 space-y-4 text-center">
                     {navLinks}
-                    <Link
-                        to="contact"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        offset={-70}
+                    <a
+                        href="/Resume.pdf"
+                        download="Alireja_Khan_Resume.pdf"
                         className="inline-block border border-orange-500 text-orange-500 px-6 py-2 rounded-full hover:bg-orange-500 hover:text-black transition-all duration-300 font-medium"
                         onClick={() => setIsOpen(false)}
                     >
                         Decode Me
-                    </Link>
+                    </a>
                 </div>
             )}
+
         </nav>
     );
 };

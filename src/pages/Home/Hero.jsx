@@ -38,7 +38,9 @@ const Hero = () => {
                         </motion.button>
                     </Link>
 
-                    <motion.button
+                    <motion.a
+                        href="/Resume.pdf" // place your resume in the public folder and name it resume.pdf
+                        download="Alireja_Khan_Resume.pdf"
                         className="flex items-center gap-2 bg-orange-500 text-black font-semibold px-5 md:px-6 py-1.5 md:py-2 rounded-full transition uppercase tracking-wide text-sm md:text-base"
                         whileHover={{
                             scale: 1.05,
@@ -51,7 +53,7 @@ const Hero = () => {
                     >
                         <FaDownload className="text-xs md:text-sm" />
                         <span>Resume</span>
-                    </motion.button>
+                    </motion.a>
                 </div>
 
                 {/* Social Icons */}
