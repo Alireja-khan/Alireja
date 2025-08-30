@@ -9,7 +9,7 @@ const projects = [
     title: "Aaponaloi",
     description:
       "Rental Management System - Full-stack platform for apartment listings, tenant applications, payments, and announcements with secure auth & responsive design.",
-    image: "https://i.ibb.co.com/c77K4ys/Screenshot-2025-08-12-005520.png",
+    image: "https://i.ibb.co.com/35GqPSwD/Screenshot-2025-08-30-220629.png",
     link: "https://aaponaloi.web.app/",
     code: "https://github.com/Alireja-khan/Food-Circle-Client?tab=readme-ov-file",
     technologies: ["react", "javascript", "firebase", "mongodb", "motion", "framer-motion", "node-js", "firebase-auth", "express-js", "tailwindcss", "chakra-ui", "aos-animation", "tanstack-react-query"],

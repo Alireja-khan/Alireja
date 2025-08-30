@@ -43,16 +43,24 @@ const projects = [
       server: "https://github.com/Alireja-khan/Aaponaloi-Server"
     },
     screenshots: [
-      "https://i.ibb.co.com/Txz1HcbS/Screenshot-2025-08-12-022643.png",
-      "https://i.ibb.co.com/S4Xj915P/Screenshot-2025-08-12-022407.png",
+      "https://i.ibb.co.com/35GqPSwD/Screenshot-2025-08-30-220629.png",
+      "https://i.ibb.co.com/8gd5TzKK/Screenshot-2025-08-30-220658.png",
+      "https://i.ibb.co.com/4ZLmcwTc/Screenshot-2025-08-30-223902.png",
+      "https://i.ibb.co.com/whky3xXk/Screenshot-2025-08-30-223850.png",
+      "https://i.ibb.co.com/Q71R41Hg/Screenshot-2025-08-30-223835.png",
       "https://i.ibb.co.com/B2W7P84n/Screenshot-2025-08-12-022543.png",
+      "https://i.ibb.co.com/Nnn69szW/Screenshot-2025-08-30-224217.png",
+      "https://i.ibb.co.com/4w9dJDz3/Screenshot-2025-08-30-224230.png",
+      "https://i.ibb.co.com/cc4CWY63/Screenshot-2025-08-30-224242.png",
+      "https://i.ibb.co.com/FktYBH81/Screenshot-2025-08-30-224255.png",
       "https://i.ibb.co.com/zT417x20/Screenshot-2025-08-12-022521.png",
-      "https://i.ibb.co.com/TxPN7Bgk/Screenshot-2025-08-12-022429.png",
-      "https://i.ibb.co.com/d0C2HCCh/Screenshot-2025-08-12-022459.png",
-      "https://i.ibb.co.com/YFKdBTyy/Screenshot-2025-08-12-022658.png",
-      "https://i.ibb.co.com/fGttn14y/Screenshot-2025-08-12-023138.png",
-      "https://i.ibb.co.com/Q7K8FgR1/Screenshot-2025-08-12-023316.png",
-      "https://i.ibb.co.com/Gv4M3CMr/Screenshot-2025-08-12-023946.png"
+      "https://i.ibb.co.com/JRR7CbN5/Screenshot-2025-08-30-221015.png",
+      "https://i.ibb.co.com/fYy2NV9y/Screenshot-2025-08-30-221024.png",
+      "https://i.ibb.co.com/n84nJ05z/Screenshot-2025-08-30-221032.png",
+      "https://i.ibb.co.com/BVJF7NWM/Screenshot-2025-08-30-221208.png",
+      "https://i.ibb.co.com/27sYkdSx/Screenshot-2025-08-30-220959.png",
+      "https://i.ibb.co.com/671c3hg6/Screenshot-2025-08-30-221218.png",
+      "https://i.ibb.co.com/My3H4nHY/Screenshot-2025-08-30-221231.png",
 
     ]
   },
