@@ -14,7 +14,7 @@ const AboutMe = () => {
           viewport={{ once: false, amount: 0.4 }}
         >
           <img
-            src="https://i.ibb.co/gL32FMnh/Whats-App-Image-2025-04-04-at-5-11-35-AM-1.jpg"
+            src="https://i.ibb.co.com/nNqKWvqT/mine4.jpg"
             alt="Alireja"
             className="rounded-2xl shadow-lg w-64 sm:w-72 md:w-80 lg:w-120 object-cover relative z-10"
           />

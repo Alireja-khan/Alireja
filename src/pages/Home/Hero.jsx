@@ -79,9 +79,9 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div className="w-full md:w-[45%] lg:w-[40%] xl:w-[620px] h-[280px] sm:h-[320px] md:h-[380px] lg:h-[450px] xl:h-[550px] 2xl:h-[650px] z-0 rounded-xl overflow-hidden mb-6 md:mb-0">
+            <div className="w-full md:w-[45%] lg: lg:w-[40%] xl:w-[620px] h-[280px] sm:h-[320px] md:h-[380px] lg:h-[450px] xl:h-[550px] 2xl:h-[650px] z-0 rounded-xl overflow-hidden mb-6 md:mb-0">
                 <img
-                    src="https://i.ibb.co/8LKYRfTN/IMG-20241206-WA0250.jpg"
+                    src="https://i.ibb.co.com/zT0xjSWg/mine1.jpg"
                     alt="Alireja Khan"
                     className="object-cover w-full h-full rounded-xl shadow-lg"
                 />
